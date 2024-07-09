@@ -1,5 +1,11 @@
-// import your listeners(events)
+import loadEvent from "./events/loadEvent.js";
 
-import sumListener from './events/sumListener.js';
+document.addEventListener("DOMContentLoaded", () => {
+    loadEvent();
+});
 
-sumListener();
+
+
+
+
+

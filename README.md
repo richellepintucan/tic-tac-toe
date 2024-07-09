@@ -1,94 +1,72 @@
-# Tic Tac Toe Game: Back End Assignment
+# Tic Tac Toe
 
-Welcome to the Tic Tac Toe game assignment! This project is focused on developing a classic Tic Tac Toe game using vanilla JavaScript. The main goals are to build a functional game and emphasize best coding practices, including the use of plain JavaScript and the separation of concerns.
+> A simple Tic Tac Toe game 
 
-## Table of Contents
+## Table of contents
 
-1. [Game Overview](#game-overview)
-2. [Development Approach](#development-approach)
-3. [Testing](#testing)
-4. [Setup and Running](#setup-and-running)
-5. [Contributing](#contributing)
-6. [Support](#support)
+- [Tic Tac Toe](#tic-tac-toe)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Features](#features)
+  - [Status](#status)
 
-## Game Overview
+## General info
 
-### Introduction
+> A simple Tic Tac Toe using HTML,CSS and Vanilla JavaScript with the implementation of Separation of Concern.
 
-Tic Tac Toe is a two-player game where each player takes turns marking a space in a 3x3 grid. The aim is to place three marks in a row, either horizontally, vertically, or diagonally.
+## Screenshots
 
-### Game Conditions
+![Example screenshot](./assets/tic-tac-toe.png)
 
-- 3x3 grid.
-- Players use 'X' or 'O' marks.
-- Three marks in a line to win.
-- A draw if all squares are filled without a win.
-- Option to restart the game.
+## Technologies
 
-## Development Approach
+- HTML 5
+- CSS 3
+- JavaScript
+- VS code
 
-### Importance of Vanilla JavaScript
 
-Using plain JavaScript, without third-party libraries:
+## Setup
 
-- Enhances core JavaScript understanding.
-- Provides code control.
-- Minimizes dependencies.
-- Facilitates a fast-loading application.
+- `clone the repo or fork it`
 
-### Separation of Concerns
+## Code Examples
 
-Ensuring code modularity:
+```js
+const dom = {
+    statusDisplay: document.getElementById('game-status'),
+    container: document.getElementById("board-container"),
+    restartButton: document.getElementById('restart-btn'),
+    get cells() {
+        return document.querySelectorAll('.cell');
+    }
+};
 
-- **Components**: Isolated UI elements.
-- **Logic**: Specific functions for rules and behavior.
-- **Styles**: Separate visual styling.
-- **Data Management**: Separate game state and player information handling.
-
-## Testing
-
-Ensuring code reliability:
-
-### Components Testing
-
-- Correct rendering.
-- Proper user interaction handling.
-
-### Utility Functions Testing
-
-- Expected output for given inputs.
-- Handling edge cases and unexpected inputs.
-- Proper interaction with other system parts.
-
-## Setup and Running
-
-### Set up
-
-```bash
-npm install
-```
-
-### Running Tests
-
-```bash
-npm run test -- path-to-your-test
-```
-
-### Running Format
-
-```bash
-npm run format
+export default dom;
 
 ```
 
-## Contributing
+## Features
 
-Please adhere to the guidelines and test thoroughly to ensure compliance with game conditions and best practices.
+List of features ready and Todos for future development
 
-## Support
+- Interactive Tic Tac Toe game playable on desktop and mobile browsers.
+- Responsive design with CSS Grid for the game board layout.
+- Restart button to reset the game and start a new round.
+- Display of game status (current player's turn, game result).
+- Separation of concerns: JavaScript handles game logic, HTML for structure, and CSS for styling.
 
-For questions or assistance, refer to the documentation.
+To-do list:
 
----
+- Implement a feature to keep track of the winner
+- Add transitions for smoother gameplay experience.
 
-Happy coding, and may the best Tic Tac Toe player win! Commit to core programming principles and clean code for professional development and growth as a skilled developer.
+## Status
+
+Project is: _Completed_
+
+

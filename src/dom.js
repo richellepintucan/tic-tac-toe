@@ -1,8 +1,13 @@
 const dom = {
-    num1: document.getElementById('num-one'),
-    num2: document.getElementById('num-two'),
-    btn: document.getElementById('sum'),
-    output: document.getElementById('output'),
+    statusDisplay: document.getElementById('game-status'),
+    container: document.getElementById("board-container"),
+    restartButton: document.getElementById('restart-btn'), 
+    get cells() {
+        return document.querySelectorAll('.cell');
+    }
 };
 
 export default dom;
+
+
+
